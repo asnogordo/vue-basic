@@ -1,14 +1,16 @@
 <template>
-  <div>Hello {{ value }}</div>
+  <div id="app">
+    <PlanetChart/>
+  </div>
 </template>
 
 <script>
+import PlanetChart from './components/PlanetChart.vue'
+
 export default {
   name: "App",
-  data() {
-    return {
-      value: "AVAX"
-    };
+  components: {
+    PlanetChart
   }
 };
 </script>
